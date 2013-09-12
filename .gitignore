@@ -11,4 +11,7 @@ pids
 logs
 results
 
+test/config.js
+
+node_modules
 npm-debug.log
