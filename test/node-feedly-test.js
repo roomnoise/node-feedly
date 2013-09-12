@@ -1,7 +1,6 @@
 var express = require('express')
 	, config = require('./config')
 	, Feedly = require('./../lib/feedly-core.js').Feedly
-	, request = require('request')  // TODO: remove!!!!!!!!
 	, OAuth2 = require('OAuth').OAuth2;
 
 var app = express();
@@ -13,7 +12,8 @@ app.use( express.cookieParser() );
 app.use(express.session({ secret: 'node-feedly', store: store }));
 
 var error = function (err, response, body) {
-	console.log('ERROR [%s]', err.message);
+	console.log(err);
+	res.send('error');
 };
 
 
