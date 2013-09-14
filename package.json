@@ -1,5 +1,5 @@
 {
-  "name": "node-feedly",
+  "name": "feedly",
   "version": "0.0.1",
   "description": "NodeJS Wrapper for the Feedly API",
   "main": "index.js",
@@ -17,7 +17,10 @@
     "wrapper",
     "article"
   ],
-  "author": "Marcus Smith",
+  "author": {
+    "name": "Marcus Smith",
+    "email": "marcus.smith@gmail.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/roomnoise/node-feedly/issues"

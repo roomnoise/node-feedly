@@ -1,7 +1,7 @@
 var express = require('express')
 	, config = require('./config')
 	, Feedly = require('./../lib/feedly-core.js').Feedly
-	, OAuth2 = require('OAuth').OAuth2;
+	, OAuth2 = require('oauth').OAuth2;
 
 var app = express();
 
