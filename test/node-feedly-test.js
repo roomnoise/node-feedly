@@ -48,7 +48,7 @@ app.get('/', function(req, res) {
 app.get('/streams', function(req, res) {
 	var feedly = new Feedly(config);
 	feedly.accessToken = req.session.oauth.access_token;
-	feedly.getStreamIds('feed/http://feeds.feedburner.com/marginalrevolution/feed', error, function(data) {
+	feedly.getStreamIds({streamId:'feed/http://feeds.feedburner.com/marginalrevolution/feed'}, error, function(data) {
 		res.send(data);
 	})
 })
